@@ -15,7 +15,6 @@ let prevScrollpos = window.scrollY;
 
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;
-  console.log(currentScrollPos);
   if (prevScrollpos > currentScrollPos || currentScrollPos < 64 || isOpen) {
     document.getElementById("navbar").style.transform = "translateY(0)";
   } else {
